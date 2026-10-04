@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Wilmer Rodriguez — Front End Developer</title>
-<meta name="description" content="Portfolio de Wilmer Rodriguez, développeur web Front End basé en France."/>
+<title>Wilmer Rodriguez — Front-End Engineer</title>
+<meta name="description" content="Wilmer Rodriguez — Front-End Engineer (React, TypeScript, Next.js) with 8 years of software engineering experience. Based in France, open to remote roles."/>
+<meta name="author" content="Wilmer Rodriguez"/>
+<meta name="theme-color" content="#080a0f"/>
+<link rel="canonical" href="https://wilmerrodriguez.github.io/cv_landingPage/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://wilmerrodriguez.github.io/cv_landingPage/"/>
+<meta property="og:title" content="Wilmer Rodriguez — Front-End Engineer"/>
+<meta property="og:description" content="React · TypeScript · Next.js. 8 years of software engineering. Trilingual (EN/ES/FR), open to remote roles."/>
+<meta property="og:image" content="https://wilmerrodriguez.github.io/cv_landingPage/img/PortfolioPic.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -256,13 +265,13 @@ section{padding:clamp(3rem,7vw,6rem) clamp(1.25rem,5vw,4rem)}
 .sg .n{font-family:var(--syne);font-size:1.8rem;font-weight:700;color:var(--cyan)}
 .sg .l{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin-top:.15rem}
 
-/* Skills */
-.sk{margin-bottom:.95rem}
-.sk-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:.28rem}
-.sk-nm{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--t2)}
-.sk-pc{font-family:var(--mono);font-size:.62rem;color:var(--t3)}
-.sk-tk{height:2px;background:var(--line);border-radius:2px;overflow:hidden}
-.sk-fl{height:100%;background:var(--cyan);width:0;border-radius:2px;transition:width 1.4s cubic-bezier(.4,0,.2,1)}
+/* Skills — grouped stack */
+.skg{margin-bottom:1.15rem}
+.skg-t{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);margin-bottom:.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;padding:.3rem .65rem;border:1px solid var(--line);border-radius:3px;color:var(--t2);background:var(--bg2);transition:border-color .2s,color .2s}
+.chip:hover{border-color:rgba(0,229,255,.35);color:var(--text)}
+.chip.k{border-color:rgba(0,229,255,.3);color:var(--cdim)}
 .langs{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.5rem}
 .skills-col{margin-top:.35rem}
 .sl-mt{margin-top:1.6rem}
@@ -295,6 +304,46 @@ section{padding:clamp(3rem,7vw,6rem) clamp(1.25rem,5vw,4rem)}
 .ptg{font-family:var(--mono);font-size:.56rem;color:var(--t3);letter-spacing:.08em;margin-top:.2rem}
 .plnk{position:absolute;top:.75rem;right:.75rem;width:28px;height:28px;border-radius:50%;background:rgba(0,229,255,.1);border:1px solid rgba(0,229,255,.22);display:flex;align-items:center;justify-content:center;font-size:.72rem;color:var(--cyan);opacity:0;transform:translateY(-5px);transition:opacity .3s,transform .3s}
 .pc:hover .plnk{opacity:1;transform:translateY(0)}
+
+/* Timeline extras */
+.tl-co{color:var(--t2);font-weight:400}
+.tl-group{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--t3);margin:0 0 1.2rem 2rem}
+
+/* Featured projects */
+.fp{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.25rem}
+.fpc{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:1.35rem 1.3rem 1.2rem;transition:border-color .25s,transform .25s var(--ease)}
+.fpc:hover{border-color:rgba(0,229,255,.3);transform:translateY(-3px)}
+.fp-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.9rem}
+.fp-n{font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;color:var(--cyan);opacity:.75}
+.fp-st{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;padding:.18rem .5rem;border-radius:100px;border:1px solid var(--line);color:var(--t3)}
+.fp-st.live{border-color:rgba(74,222,128,.35);color:#4ade80}
+.fp-st.wip{border-color:rgba(250,204,21,.35);color:#facc15}
+.fp-t{font-family:var(--syne);font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.45rem}
+.fp-d{font-size:.85rem;color:var(--t2);line-height:1.7;margin-bottom:.85rem}
+.fp-pts{margin-bottom:1rem}
+.fp-pts li{font-size:.8rem;color:var(--t2);padding-left:1rem;position:relative;margin-bottom:.25rem;line-height:1.55}
+.fp-pts li::before{content:'→';position:absolute;left:0;color:var(--cyan);font-size:.58rem;top:.25em}
+.fp-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
+.fp-tags span{font-family:var(--mono);font-size:.58rem;color:var(--t3);border:1px solid var(--line);border-radius:2px;padding:.15rem .45rem}
+.fp-links{display:flex;gap:1rem;margin-top:1rem;font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase}
+.fp-links a{color:var(--cyan)}
+.fp-links a:hover{text-decoration:underline}
+.more-h{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--t3);margin-top:3rem}
+
+/* Language toggle */
+.lang-btn{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;padding:.32rem .6rem;border:1px solid var(--line);border-radius:4px;background:transparent;color:var(--t2);cursor:pointer;transition:border-color .2s,color .2s}
+.lang-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+
+/* Accessibility */
+.skip{position:absolute;left:-9999px;top:.5rem;z-index:400;background:var(--cyan);color:#000;padding:.5rem .9rem;border-radius:4px;font-family:var(--mono);font-size:.7rem}
+.skip:focus{left:.5rem}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none;transition:none}
+  .mqt,.dot,.avatar-badge::before{animation:none}
+}
 
 /* ── CONTACT ───────────────────────────────────────────────── */
 #contact{background:var(--bg)}
@@ -388,6 +437,7 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 
   /* Portfolio: 2 cols */
   .pg{grid-template-columns:repeat(2,1fr)}
+  .fp{grid-template-columns:1fr}
 
   /* Contact: stack */
   .cw{grid-template-columns:1fr}
@@ -433,30 +483,34 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 </head>
 <body>
 
-<div class="cglow" id="cg"></div>
+<a href="#main" class="skip" data-i18n="skip">Skip to content</a>
+<div class="cglow" id="cg" aria-hidden="true"></div>
 
 <!-- ── NAV ─────────────────────────────────────────────────── -->
-<nav id="nav">
+<nav id="nav" aria-label="Main navigation">
   <div class="logo">WR_DEV</div>
   <ul class="nav-links" role="list">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#portfolio">Work</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <li><a href="#about" data-i18n="nav.about">About</a></li>
+    <li><a href="#experience" data-i18n="nav.exp">Experience</a></li>
+    <li><a href="#portfolio" data-i18n="nav.work">Work</a></li>
+    <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
   </ul>
-  <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false" aria-controls="mob">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Voir en français">FR</button>
+    <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false" aria-controls="mob">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <nav id="mob" aria-label="Mobile navigation">
-  <a href="#about"      onclick="cmob()">About</a>
-  <a href="#experience" onclick="cmob()">Experience</a>
-  <a href="#portfolio"  onclick="cmob()">Work</a>
-  <a href="#contact"    onclick="cmob()">Contact</a>
+  <a href="#about"      onclick="cmob()" data-i18n="nav.about">About</a>
+  <a href="#experience" onclick="cmob()" data-i18n="nav.exp">Experience</a>
+  <a href="#portfolio"  onclick="cmob()" data-i18n="nav.work">Work</a>
+  <a href="#contact"    onclick="cmob()" data-i18n="nav.contact">Contact</a>
 </nav>
 
-<main>
+<main id="main">
 
 <!-- ── HERO ────────────────────────────────────────────────── -->
 <section id="hero">
@@ -472,43 +526,30 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
       <div class="mobile-avatar" aria-hidden="true">
         <div class="avatar-ring">
           <div class="avatar-inner">
-            <img
-              id="avatar-img"
-              src="https://wilmerrodriguez.github.io/portfolio2.0/img/PortfolioPic.jpg"
-              alt=""
-              width="150" height="150"
-            />
+            <img id="avatar-img" src="img/PortfolioPic.jpg" alt="" width="150" height="150"/>
           </div>
         </div>
-        <div class="avatar-badge">Disponible — Laval, FR</div>
+        <div class="avatar-badge" data-i18n="hero.badge">8+ yrs · React · TypeScript</div>
       </div>
 
-      <div class="eyebrow"><div class="dot"></div><span>Disponible — Laval, France</span></div>
+      <div class="eyebrow"><div class="dot"></div><span data-i18n="hero.eyebrow">Open to remote roles — Laval, France</span></div>
       <h1>
-        Front&nbsp;End<br/>
-        <span class="ac">Developer</span>
-        &amp;&nbsp;Creator.
+        <span data-i18n="hero.h1a">Front-End</span><br/>
+        <span class="ac" data-i18n="hero.h1b">Engineer.</span>
       </h1>
-      <p class="hero-desc">Je conçois et développe des interfaces web rapides, belles et accessibles. Autodidacte passionné par React, JavaScript et l'expérience utilisateur.</p>
+      <p class="hero-desc" data-i18n="hero.desc">I build fast, accessible web apps with React, TypeScript and Next.js, from polished interfaces to the APIs behind them. 8 years in software engineering, trilingual (EN/ES/FR), comfortable across US and European hours.</p>
       <div class="btn-row">
-        <a href="https://wilmerrodriguez.github.io/portfolio2.0/Wilmer_RodriguezCV.pdf" target="_blank" rel="noopener" class="btn btn-p">↓ Télécharger CV</a>
-        <a href="#contact" class="btn btn-g">Me contacter →</a>
+        <a href="Wilmer_Rodriguez_Resume.pdf" target="_blank" rel="noopener" class="btn btn-p" data-i18n="cta.cv">↓ Download resume</a>
+        <a href="#portfolio" class="btn btn-g" data-i18n="cta.work">See my work →</a>
       </div>
     </div>
 
     <!-- DESKTOP PHOTO (hidden ≤900px) -->
     <div class="photo-wrap">
-      <img
-        id="hero-img"
-        src="https://wilmerrodriguez.github.io/portfolio2.0/img/PortfolioPic.jpg"
-        alt="Wilmer Rodriguez — Développeur Web Front End"
-        class="hero-img"
-        width="360" height="360"
-        loading="eager"
-      />
+      <img id="hero-img" src="img/PortfolioPic.jpg" alt="Wilmer Rodriguez" class="hero-img" width="360" height="360" loading="eager"/>
       <div class="photo-badge">
-        <strong>10+</strong>
-        <span>Projets réalisés</span>
+        <strong>8+</strong>
+        <span data-i18n="hero.years">Years engineering</span>
       </div>
     </div>
 
@@ -518,14 +559,14 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── MARQUEE ───────────────────────────────────────────────── -->
 <div class="mqw" aria-hidden="true">
   <div class="mqt">
-    <span class="mi">HTML5</span><span class="mi">CSS3</span><span class="mi">JavaScript</span>
-    <span class="mi">React JS</span><span class="mi">Node JS</span><span class="mi">GitHub</span>
-    <span class="mi">Responsive Design</span><span class="mi">UI / UX</span>
-    <span class="mi">REST API</span><span class="mi">Redux</span>
-    <span class="mi">HTML5</span><span class="mi">CSS3</span><span class="mi">JavaScript</span>
-    <span class="mi">React JS</span><span class="mi">Node JS</span><span class="mi">GitHub</span>
-    <span class="mi">Responsive Design</span><span class="mi">UI / UX</span>
-    <span class="mi">REST API</span><span class="mi">Redux</span>
+    <span class="mi">React</span><span class="mi">TypeScript</span><span class="mi">Next.js</span>
+    <span class="mi">JavaScript ES6+</span><span class="mi">Tailwind CSS</span><span class="mi">Redux Toolkit</span>
+    <span class="mi">Node.js</span><span class="mi">REST APIs</span><span class="mi">Accessibility</span>
+    <span class="mi">Jest</span><span class="mi">CI/CD</span><span class="mi">Figma</span>
+    <span class="mi">React</span><span class="mi">TypeScript</span><span class="mi">Next.js</span>
+    <span class="mi">JavaScript ES6+</span><span class="mi">Tailwind CSS</span><span class="mi">Redux Toolkit</span>
+    <span class="mi">Node.js</span><span class="mi">REST APIs</span><span class="mi">Accessibility</span>
+    <span class="mi">Jest</span><span class="mi">CI/CD</span><span class="mi">Figma</span>
   </div>
 </div>
 
@@ -533,34 +574,48 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <section id="about">
   <div class="container">
     <div class="about-text rev">
-      <div class="sl">À propos</div>
-      <h2 class="st">Passionné par le code,<br/>guidé par la curiosité.</h2>
-      <p>Tout ce que je sais est autodidacte — motivation et dévouement. Rester informé des nouvelles technologies de développement web est ce que j'aime faire. Les projets que j'ai créés m'ont permis d'affiner et de concentrer mes compétences.</p>
-      <p>Faire des erreurs et poser des questions au sein des communautés de développeurs m'a beaucoup aidé dans ma courbe d'apprentissage. N'hésitez pas à me contacter s'il y a une chance que je puisse vous être utile dans vos futurs projets.</p>
+      <div class="sl" data-i18n="about.label">About</div>
+      <h2 class="st" data-i18n="about.title">Clean interfaces,<br/>reliable releases.</h2>
+      <p data-i18n="about.p1">I'm a front-end engineer with 8 years of experience building and supporting customer-facing web platforms used around the world. Today I work on website generation, publishing and client-portal services at B12, and build responsive React and TypeScript sites for freelance clients.</p>
+      <p data-i18n="about.p2">Beyond the UI, I've spent years close to production: integrating APIs, adding monitoring and tests, and troubleshooting real user issues. That makes me the kind of front-end developer who ships carefully and writes the docs so the next person can too.</p>
       <div class="sgrid rev d1">
-        <div class="sg"><div class="n">10+</div><div class="l">Projets réalisés</div></div>
-        <div class="sg"><div class="n">3+</div><div class="l">Ans d'expérience</div></div>
-        <div class="sg"><div class="n">2+</div><div class="l">Projets React</div></div>
-        <div class="sg"><div class="n">3+</div><div class="l">Projets à venir</div></div>
+        <div class="sg"><div class="n">8+</div><div class="l" data-i18n="stat.years">Years engineering</div></div>
+        <div class="sg"><div class="n">3</div><div class="l" data-i18n="stat.langs">Languages spoken</div></div>
+        <div class="sg"><div class="n">10+</div><div class="l" data-i18n="stat.projects">Projects shipped</div></div>
+        <div class="sg"><div class="n">EU+US</div><div class="l" data-i18n="stat.tz">Time zones covered</div></div>
       </div>
-      <a href="https://wilmerrodriguez.github.io/portfolio2.0/Wilmer_RodriguezCV.pdf" target="_blank" rel="noopener" class="btn btn-g about-cv">↓ Télécharger CV</a>
+      <a href="Wilmer_Rodriguez_Resume.pdf" target="_blank" rel="noopener" class="btn btn-g about-cv" data-i18n="cta.cv">↓ Download resume</a>
     </div>
 
     <div class="rev d2">
-      <div class="sl">Compétences</div>
+      <div class="sl" data-i18n="skills.label">Tech stack</div>
       <div class="skills-col">
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">HTML5</span><span class="sk-pc">90%</span></div><div class="sk-tk"><div class="sk-fl" data-w="90"></div></div></div>
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">CSS3</span><span class="sk-pc">70%</span></div><div class="sk-tk"><div class="sk-fl" data-w="70"></div></div></div>
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">JavaScript</span><span class="sk-pc">75%</span></div><div class="sk-tk"><div class="sk-fl" data-w="75"></div></div></div>
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">React JS</span><span class="sk-pc">50%</span></div><div class="sk-tk"><div class="sk-fl" data-w="50"></div></div></div>
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">Node JS</span><span class="sk-pc">60%</span></div><div class="sk-tk"><div class="sk-fl" data-w="60"></div></div></div>
-        <div class="sk"><div class="sk-hd"><span class="sk-nm">GitHub</span><span class="sk-pc">60%</span></div><div class="sk-tk"><div class="sk-fl" data-w="60"></div></div></div>
+        <div class="skg">
+          <div class="skg-t" data-i18n="skills.fe">Front end</div>
+          <div class="chips"><span class="chip k">React</span><span class="chip k">TypeScript</span><span class="chip k">Next.js</span><span class="chip k">JavaScript (ES6+)</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Tailwind CSS</span><span class="chip">Redux Toolkit</span></div>
+        </div>
+        <div class="skg">
+          <div class="skg-t" data-i18n="skills.prac">Practices</div>
+          <div class="chips"><span class="chip" data-i18n="chip.resp">Responsive / mobile-first</span><span class="chip" data-i18n="chip.a11y">Accessibility (WCAG)</span><span class="chip" data-i18n="chip.comp">Component architecture</span><span class="chip" data-i18n="chip.api">REST API integration</span><span class="chip" data-i18n="chip.perf">Web performance</span></div>
+        </div>
+        <div class="skg">
+          <div class="skg-t" data-i18n="skills.test">Testing &amp; quality</div>
+          <div class="chips"><span class="chip">Jest</span><span class="chip">React Testing Library</span><span class="chip" data-i18n="chip.mon">Monitoring &amp; tracing</span><span class="chip" data-i18n="chip.debug">Debugging</span></div>
+        </div>
+        <div class="skg">
+          <div class="skg-t" data-i18n="skills.tools">Tools &amp; workflow</div>
+          <div class="chips"><span class="chip">Git / GitHub</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Vite</span><span class="chip">npm</span><span class="chip">Figma</span><span class="chip">Postman</span></div>
+        </div>
+        <div class="skg">
+          <div class="skg-t" data-i18n="skills.be">Back end &amp; cloud</div>
+          <div class="chips"><span class="chip">Node.js</span><span class="chip">PHP</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">Azure</span></div>
+        </div>
       </div>
-      <div class="sl sl-mt">Langues</div>
+      <div class="sl sl-mt" data-i18n="skills.langs">Languages</div>
       <div class="langs">
-        <span class="lp hi">English</span>
-        <span class="lp hi">Español</span>
-        <span class="lp">Français</span>
+        <span class="lp hi" data-i18n="lang.en">English</span>
+        <span class="lp hi" data-i18n="lang.es">Spanish</span>
+        <span class="lp hi" data-i18n="lang.fr">French</span>
       </div>
     </div>
   </div>
@@ -569,59 +624,54 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── EXPERIENCE ────────────────────────────────────────────── -->
 <section id="experience">
   <div class="container">
-    <div class="sl rev">Parcours</div>
-    <h2 class="st rev">Expérience &amp;<br/>Formation</h2>
+    <div class="sl rev" data-i18n="exp.label">Career</div>
+    <h2 class="st rev" data-i18n="exp.title">Experience &amp;<br/>Education</h2>
     <div class="tl">
       <div class="tli rev d1">
-        <div class="tl-d">Oct 2024 — Présent</div>
-        <div class="tl-r">Service Client · Carrefour Express</div>
+        <div class="tl-d" data-i18n="exp.b12.d">Jan 2025 — Present</div>
+        <div class="tl-r"><span data-i18n="exp.se">Software Engineer</span> <span class="tl-co">· B12</span></div>
         <ul class="tl-pts">
-          <li>Caisse, organisation des stocks, réception des livraisons</li>
-          <li>Flexibilité, adaptabilité et orientation vers la progression</li>
-          <li>Gestion et organisation du magasin</li>
+          <li data-i18n="exp.b12.1">Support the website generation, publishing and client-portal services customers rely on to launch and manage their websites.</li>
+          <li data-i18n="exp.b12.2">Strengthen release decisions and shorten troubleshooting by adding monitoring, tracing and targeted tests to production services.</li>
+          <li data-i18n="exp.b12.3">Write clear technical documentation that helps engineers diagnose issues and ship changes with confidence.</li>
         </ul>
       </div>
       <div class="tli rev d1">
-        <div class="tl-d">Nov 2022 — Oct 2023</div>
-        <div class="tl-r">Zero To Mastery · Complete React Developer 2023</div>
+        <div class="tl-d" data-i18n="exp.fl.d">2025 — Present</div>
+        <div class="tl-r"><span data-i18n="exp.fed">Front-End Developer</span> <span class="tl-co" data-i18n="exp.fl.co">· Freelance</span></div>
         <ul class="tl-pts">
-          <li>Redux, Redux Thunk, Redux Saga, GraphQL, React Router</li>
-          <li>Firebase, Stripe API, Progressive Web Apps, Tests Jest &amp; Enzyme</li>
-          <li>Architecture React à grande échelle</li>
+          <li data-i18n="exp.fl.1">Deliver responsive, mobile-first websites and reusable UI components for clients using React, TypeScript and Tailwind CSS.</li>
+          <li data-i18n="exp.fl.2">Translate client requirements and Figma designs into accessible layouts with clear navigation and consistent styling.</li>
+          <li data-i18n="exp.fl.3">Integrate REST APIs with robust loading, error and form-validation states, and resolve cross-browser issues.</li>
         </ul>
       </div>
       <div class="tli rev d2">
-        <div class="tl-d">Sep 2016 — Déc 2018</div>
-        <div class="tl-r">Technicien AR/VR · EON Reality — Laval, FR</div>
+        <div class="tl-d" data-i18n="exp.ka.d">Nov 2022 — Nov 2024</div>
+        <div class="tl-r"><span data-i18n="exp.se">Software Engineer</span> <span class="tl-co">· Kashiko</span></div>
         <ul class="tl-pts">
-          <li>Développement AR/VR avec EON Studio 3D</li>
-          <li>Animation 3D avec 3Ds MAX et Photoshop</li>
-          <li>Développement mobile Android &amp; iOS en JavaScript</li>
-          <li>Gestion de projet et relation client (BaseCamp, GanttProject)</li>
-          <li>Installation HTC Vive et démonstrations clients</li>
+          <li data-i18n="exp.ka.1">Maintained customer-facing API and portal services, investigating and resolving production issues.</li>
+          <li data-i18n="exp.ka.2">Improved visibility into application errors so the team could detect and fix problems sooner.</li>
+          <li data-i18n="exp.ka.3">Contributed to performance testing and CI/CD practices that kept releases reliable during traffic peaks.</li>
         </ul>
       </div>
       <div class="tli rev d2">
-        <div class="tl-d">Nov 2019 — Oct 2024</div>
-        <div class="tl-r">Cuisinier / Service · Jules et Johns</div>
+        <div class="tl-d" data-i18n="exp.eon.d">2018 — Sep 2022</div>
+        <div class="tl-r"><span data-i18n="exp.se">Software Engineer</span> <span class="tl-co">· EON Reality</span></div>
         <ul class="tl-pts">
-          <li>Service client et environnement de travail soigné</li>
-          <li>Ponctualité, travail d'équipe et fiabilité</li>
+          <li data-i18n="exp.eon.1">Supported web services and 3D content delivery for education users worldwide, improving download reliability and performance.</li>
+          <li data-i18n="exp.eon.2">Built automated release health checks that caught problems before they reached users.</li>
+          <li data-i18n="exp.eon.3">Diagnosed user-facing issues through testing, log analysis and issue reproduction.</li>
         </ul>
       </div>
+
+      <div class="tl-group rev" data-i18n="exp.edu">Education &amp; training</div>
       <div class="tli rev d3">
-        <div class="tl-d">Mar 2013 — Oct 2017</div>
-        <div class="tl-r">Barista · Starbucks</div>
-        <ul class="tl-pts">
-          <li>Gestion de caisse et coordination d'équipe</li>
-          <li>Gestion des stocks et des livraisons</li>
-        </ul>
+        <div class="tl-r"><span data-i18n="edu.deg">Associate's Degree, Information Technology</span> <span class="tl-co">· Strayer University</span></div>
       </div>
       <div class="tli rev d3">
-        <div class="tl-d">Jan 2012 — Fév 2015</div>
-        <div class="tl-r">Licence Informatique · Strayer University</div>
+        <div class="tl-r">Complete React Developer <span class="tl-co">· Zero To Mastery</span></div>
         <ul class="tl-pts">
-          <li>Formation en sciences informatiques et développement logiciel</li>
+          <li data-i18n="edu.ztm">Redux, Redux Saga, GraphQL, React Router, Firebase, Stripe API, PWAs, Jest testing</li>
         </ul>
       </div>
     </div>
@@ -631,9 +681,47 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── PORTFOLIO ─────────────────────────────────────────────── -->
 <section id="portfolio">
   <div class="container">
-    <div class="sl rev">Réalisations</div>
-    <h2 class="st rev">Mon travail</h2>
-    <p class="rev portfolio-desc">Projets réalisés pour développer et consolider mes compétences en développement Front End.</p>
+    <div class="sl rev" data-i18n="work.label">Work</div>
+    <h2 class="st rev" data-i18n="work.title">Featured builds</h2>
+    <p class="rev portfolio-desc" data-i18n="work.desc">A few projects that show how I approach real product problems: state management, interaction design and the plumbing behind the UI.</p>
+
+    <div class="fp">
+      <article class="fpc rev d1">
+        <div class="fp-top"><span class="fp-n">// 01</span><span class="fp-st" data-i18n="st.react">React app</span></div>
+        <h3 class="fp-t">Groovy Grub</h3>
+        <p class="fp-d" data-i18n="p1.d">A food &amp; beverage e-commerce store with a full shopping flow, built as a single-page app.</p>
+        <ul class="fp-pts">
+          <li data-i18n="p1.1">Catalog with live search, category filters and product detail pages</li>
+          <li data-i18n="p1.2">Cart with quantity controls, promo codes and a free-delivery threshold</li>
+          <li data-i18n="p1.3">Checkout and sign-in flows, with cart, auth and UI state in Redux Toolkit slices</li>
+        </ul>
+        <div class="fp-tags"><span>React 18</span><span>Redux Toolkit</span><span>React Router</span><span>Vite</span></div>
+      </article>
+
+      <article class="fpc rev d2">
+        <div class="fp-top"><span class="fp-n">// 02</span><span class="fp-st" data-i18n="st.js">Vanilla JS</span></div>
+        <h3 class="fp-t" data-i18n="p2.t">ESL Learning Site</h3>
+        <p class="fp-d" data-i18n="p2.d">An English-learning site for French speakers, focused on the mistakes they make most.</p>
+        <ul class="fp-pts">
+          <li data-i18n="p2.1">Bilingual EN↔FR glossary tooltip engine that annotates terms as content loads, using TreeWalker and MutationObserver</li>
+          <li data-i18n="p2.2">Printable worksheets on false friends, present perfect vs. passé composé and phrasal verbs</li>
+        </ul>
+        <div class="fp-tags"><span>JavaScript</span><span>DOM APIs</span><span>HTML5</span><span>CSS3</span></div>
+      </article>
+
+      <article class="fpc rev d3">
+        <div class="fp-top"><span class="fp-n">// 03</span><span class="fp-st wip" data-i18n="st.wip">In progress</span></div>
+        <h3 class="fp-t">AI DJ</h3>
+        <p class="fp-d" data-i18n="p3.d">A mobile-friendly music app: describe a vibe in plain words and get a matching playlist.</p>
+        <ul class="fp-pts">
+          <li data-i18n="p3.1">Claude LLM layer turns natural-language moods into structured Spotify queries</li>
+          <li data-i18n="p3.2">Thin Node/Express backend handles Spotify OAuth and keeps API keys off the client</li>
+        </ul>
+        <div class="fp-tags"><span>React</span><span>Vite</span><span>Node / Express</span><span>Spotify API</span><span>Claude API</span></div>
+      </article>
+    </div>
+
+    <h3 class="more-h rev" data-i18n="work.more">// More projects — live on GitHub Pages</h3>
     <div class="pg rev d1">
       <a class="pc" href="https://wilmerrodriguez.github.io/womens-cosmetics/" target="_blank" rel="noopener" aria-label="Womens Cosmetics — live site">
         <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/womens-cosmetics/" alt="Womens Cosmetics" loading="lazy" width="400" height="300"/>
@@ -645,34 +733,24 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
         <div class="po"><div class="pn">// 02</div><div class="pt">My Bakery</div><div class="ptg">HTML · CSS · JS</div></div>
         <span class="plnk" aria-hidden="true">↗</span>
       </a>
-      <a class="pc" href="https://wilmerrodriguez.github.io/AgriCulture/" target="_blank" rel="noopener" aria-label="AgriCulture — live site">
-        <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/AgriCulture/" alt="AgriCulture" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 03</div><div class="pt">AgriCulture</div><div class="ptg">HTML · CSS</div></div>
-        <span class="plnk" aria-hidden="true">↗</span>
-      </a>
       <a class="pc" href="https://wilmerrodriguez.github.io/hilux-realEstate/" target="_blank" rel="noopener" aria-label="Hilux Real Estate — live site">
         <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/hilux-realEstate/" alt="Hilux Real Estate" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 04</div><div class="pt">Hilux Real Estate</div><div class="ptg">HTML · CSS · JS</div></div>
-        <span class="plnk" aria-hidden="true">↗</span>
-      </a>
-      <a class="pc" href="https://wilmerrodriguez.github.io/travailBlog/" target="_blank" rel="noopener" aria-label="Travel Blog — live site">
-        <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/travailBlog/" alt="Travel Blog" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 05</div><div class="pt">Travel Blog</div><div class="ptg">HTML · CSS · JS</div></div>
+        <div class="po"><div class="pn">// 03</div><div class="pt">Hilux Real Estate</div><div class="ptg">HTML · CSS · JS</div></div>
         <span class="plnk" aria-hidden="true">↗</span>
       </a>
       <a class="pc" href="https://wilmerrodriguez.github.io/travelBlog2.0/" target="_blank" rel="noopener" aria-label="Travel Blog 2.0 — live site">
         <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/travelBlog2.0/" alt="Travel Blog 2.0" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 06</div><div class="pt">Travel Blog 2.0</div><div class="ptg">HTML · CSS · JS</div></div>
+        <div class="po"><div class="pn">// 04</div><div class="pt">Travel Blog 2.0</div><div class="ptg">HTML · CSS · JS</div></div>
         <span class="plnk" aria-hidden="true">↗</span>
       </a>
-      <a class="pc" href="https://wilmerrodriguez.github.io/portfolio2.0/" target="_blank" rel="noopener" aria-label="Portfolio 2.0 — live site">
-        <img src="https://wilmerrodriguez.github.io/portfolio2.0/img/port4.jpg" alt="Portfolio 2.0" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 07</div><div class="pt">Portfolio 2.0</div><div class="ptg">HTML · CSS</div></div>
+      <a class="pc" href="https://wilmerrodriguez.github.io/AgriCulture/" target="_blank" rel="noopener" aria-label="AgriCulture — live site">
+        <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/AgriCulture/" alt="AgriCulture" loading="lazy" width="400" height="300"/>
+        <div class="po"><div class="pn">// 05</div><div class="pt">AgriCulture</div><div class="ptg">HTML · CSS</div></div>
         <span class="plnk" aria-hidden="true">↗</span>
       </a>
       <a class="pc" href="https://wilmerrodriguez.github.io/grid-testimonials/" target="_blank" rel="noopener" aria-label="Grid Testimonials — live site">
         <img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://wilmerrodriguez.github.io/grid-testimonials/" alt="Grid Testimonials" loading="lazy" width="400" height="300"/>
-        <div class="po"><div class="pn">// 08</div><div class="pt">Grid Testimonials</div><div class="ptg">HTML · CSS</div></div>
+        <div class="po"><div class="pn">// 06</div><div class="pt">Grid Testimonials</div><div class="ptg">HTML · CSS</div></div>
         <span class="plnk" aria-hidden="true">↗</span>
       </a>
     </div>
@@ -682,44 +760,44 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── CONTACT ───────────────────────────────────────────────── -->
 <section id="contact">
   <div class="container">
-    <div class="sl rev">Contact</div>
-    <h2 class="st rev">Travaillons<br/>ensemble.</h2>
+    <div class="sl rev" data-i18n="ct.label">Contact</div>
+    <h2 class="st rev" data-i18n="ct.title">Let's work<br/>together.</h2>
     <div class="cw">
       <div class="cm rev">
-        <h3>Envoyez-moi un message</h3>
-        <p>Vous avez un projet, une idée ou une proposition ? Je suis disponible pour de nouvelles collaborations et réponds généralement sous 24h.</p>
-        <div class="cdet"><div class="cico" aria-hidden="true">📍</div><div><div class="clb">Localisation</div><div class="cvl">France</div></div></div>
+        <h3 data-i18n="ct.h3">Send me a message</h3>
+        <p data-i18n="ct.p">Hiring for a front-end role, or have a project in mind? I'm open to remote positions and freelance work, and usually reply within 24 hours.</p>
+        <div class="cdet"><div class="cico" aria-hidden="true">📍</div><div><div class="clb" data-i18n="ct.loc">Location</div><div class="cvl" data-i18n="ct.locv">Laval, France · Remote</div></div></div>
         <div class="cdet"><div class="cico" aria-hidden="true">✉️</div><div><div class="clb">Email</div><div class="cvl" id="ceml"><a href="mailto:solowildev@gmail.com">solowildev@gmail.com</a></div></div></div>
         <div class="cdet"><div class="cico" aria-hidden="true">💼</div><div><div class="clb">GitHub</div><div class="cvl"><a href="https://github.com/wilmerRodriguez" target="_blank" rel="noopener">wilmerRodriguez</a></div></div></div>
       </div>
       <div class="rev d1">
-        <div class="cf">
+        <form class="cf" id="cform" novalidate onsubmit="event.preventDefault();sendMsg()">
           <div class="cf-row">
             <div class="fg" id="fgn">
-              <label for="cn">Nom complet *</label>
-              <input type="text" id="cn" name="from_name" placeholder="Jean Dupont" autocomplete="name" inputmode="text"/>
-              <span class="emsg" role="alert">Veuillez entrer votre nom.</span>
+              <label for="cn" data-i18n="f.name">Full name *</label>
+              <input type="text" id="cn" name="from_name" placeholder="Jane Smith" data-i18n-ph="f.name.ph" autocomplete="name"/>
+              <span class="emsg" role="alert" data-i18n="f.name.err">Please enter your name.</span>
             </div>
             <div class="fg" id="fge">
               <label for="ce">Email *</label>
-              <input type="email" id="ce" name="from_email" placeholder="jean@exemple.com" autocomplete="email" inputmode="email"/>
-              <span class="emsg" role="alert">Email invalide.</span>
+              <input type="email" id="ce" name="from_email" placeholder="jane@company.com" data-i18n-ph="f.email.ph" autocomplete="email"/>
+              <span class="emsg" role="alert" data-i18n="f.email.err">Please enter a valid email.</span>
             </div>
           </div>
           <div class="fg" id="fgs">
-            <label for="cs">Sujet *</label>
-            <input type="text" id="cs" name="subject" placeholder="Proposition, question…" inputmode="text"/>
-            <span class="emsg" role="alert">Veuillez entrer un sujet.</span>
+            <label for="cs" data-i18n="f.subj">Subject *</label>
+            <input type="text" id="cs" name="subject" placeholder="Role, project, question…" data-i18n-ph="f.subj.ph"/>
+            <span class="emsg" role="alert" data-i18n="f.subj.err">Please enter a subject.</span>
           </div>
           <div class="fg" id="fgm">
             <label for="cm2">Message *</label>
-            <textarea id="cm2" name="message" placeholder="Décrivez votre projet…"></textarea>
-            <span class="emsg" role="alert">Veuillez entrer un message.</span>
+            <textarea id="cm2" name="message" placeholder="Tell me about the role or project…" data-i18n-ph="f.msg.ph"></textarea>
+            <span class="emsg" role="alert" data-i18n="f.msg.err">Please enter a message.</span>
           </div>
-          <button class="btn-snd" id="sbtn" type="button" onclick="sendMsg()">
-            <span id="sbl">Envoyer →</span>
+          <button class="btn-snd" id="sbtn" type="submit">
+            <span id="sbl" data-i18n="f.send">Send →</span>
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -730,7 +808,7 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── FOOTER ────────────────────────────────────────────────── -->
 <footer>
   <div class="fl">WILMER_RODRIGUEZ</div>
-  <div class="fr">© 2026 · Front End Developer · France</div>
+  <div class="fr">© 2026 · <span data-i18n="ft">Front-End Engineer · France · Remote</span></div>
 </footer>
 
 <div id="toast" role="status" aria-live="polite"></div>
@@ -738,6 +816,103 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 <!-- ── SCRIPTS ───────────────────────────────────────────────── -->
 <script>
 const W3F_KEY = '3c082592-2570-4a2c-9dc6-3eb6eff07904';
+
+/* ── i18n: English is written in the HTML; French lives here ── */
+const FR = {
+  'skip':'Aller au contenu',
+  'nav.about':'À propos','nav.exp':'Expérience','nav.work':'Projets','nav.contact':'Contact',
+  'hero.badge':'8+ ans · React · TypeScript',
+  'hero.eyebrow':'Ouvert aux postes en remote — Laval, France',
+  'hero.h1a':'Ingénieur','hero.h1b':'Front-End.',
+  'hero.desc':"Je conçois des applications web rapides et accessibles avec React, TypeScript et Next.js, de l'interface soignée jusqu'aux API qui la font tourner. 8 ans en ingénierie logicielle, trilingue (EN/ES/FR), à l'aise sur les fuseaux US et européens.",
+  'cta.cv':'↓ Télécharger le CV','cta.work':'Voir mes projets →',
+  'hero.years':"Ans d'ingénierie",
+  'about.label':'À propos',
+  'about.title':'Des interfaces propres,<br/>des mises en prod fiables.',
+  'about.p1':"Ingénieur front-end, j'ai 8 ans d'expérience dans la création et le support de plateformes web utilisées dans le monde entier. Aujourd'hui, je travaille chez B12 sur les services de génération de sites, de publication et de portail client, et je réalise des sites React et TypeScript responsives pour des clients en freelance.",
+  'about.p2':"Au-delà de l'interface, je travaille depuis des années au plus près de la production : intégration d'API, monitoring, tests et résolution de vrais problèmes utilisateurs. Je livre avec soin et je documente pour que la personne suivante puisse en faire autant.",
+  'stat.years':"Ans d'ingénierie",'stat.langs':'Langues parlées','stat.projects':'Projets livrés','stat.tz':'Fuseaux couverts',
+  'skills.label':'Stack technique','skills.fe':'Front-end','skills.prac':'Pratiques','skills.test':'Tests &amp; qualité',
+  'skills.tools':'Outils &amp; workflow','skills.be':'Back-end &amp; cloud','skills.langs':'Langues',
+  'chip.resp':'Responsive / mobile-first','chip.a11y':'Accessibilité (WCAG)','chip.comp':'Architecture de composants',
+  'chip.api':"Intégration d'API REST",'chip.perf':'Performance web','chip.mon':'Monitoring &amp; tracing','chip.debug':'Débogage',
+  'lang.en':'Anglais','lang.es':'Espagnol','lang.fr':'Français',
+  'exp.label':'Parcours','exp.title':'Expérience &amp;<br/>Formation',
+  'exp.se':'Ingénieur logiciel','exp.fed':'Développeur Front-End','exp.fl.co':'· Freelance',
+  'exp.b12.d':'Janv. 2025 — Aujourd’hui','exp.fl.d':'2025 — Aujourd’hui','exp.ka.d':'Nov. 2022 — Nov. 2024','exp.eon.d':'2018 — Sept. 2022',
+  'exp.b12.1':'Support des services de génération de sites, de publication et de portail client sur lesquels les clients s’appuient pour lancer et gérer leur site.',
+  'exp.b12.2':'Fiabilisation des mises en production et diagnostic plus rapide grâce au monitoring, au tracing et à des tests ciblés sur les services en production.',
+  'exp.b12.3':'Rédaction d’une documentation technique claire qui aide les ingénieurs à diagnostiquer et livrer en confiance.',
+  'exp.fl.1':'Livraison de sites responsives mobile-first et de composants UI réutilisables avec React, TypeScript et Tailwind CSS.',
+  'exp.fl.2':'Traduction des besoins clients et des maquettes Figma en mises en page accessibles, à la navigation claire et au style cohérent.',
+  'exp.fl.3':'Intégration d’API REST avec gestion du chargement, des erreurs et de la validation des formulaires ; correction des problèmes cross-browser.',
+  'exp.ka.1':'Maintenance des services d’API et de portail client, investigation et résolution des incidents de production.',
+  'exp.ka.2':'Meilleure visibilité sur les erreurs applicatives pour détecter et corriger les problèmes plus tôt.',
+  'exp.ka.3':'Contribution aux tests de performance et aux pratiques CI/CD qui ont garanti des mises en prod fiables lors des pics de trafic.',
+  'exp.eon.1':'Support des services web et de la diffusion de contenus 3D pour des utilisateurs du secteur éducatif dans le monde entier, avec des téléchargements plus fiables et plus rapides.',
+  'exp.eon.2':'Mise en place de vérifications automatiques de santé des releases qui détectaient les problèmes avant les utilisateurs.',
+  'exp.eon.3':'Diagnostic des problèmes utilisateurs par les tests, l’analyse de logs et la reproduction des incidents.',
+  'exp.edu':'Formation','edu.deg':'Associate’s Degree, Technologies de l’information',
+  'edu.ztm':'Redux, Redux Saga, GraphQL, React Router, Firebase, API Stripe, PWA, tests Jest',
+  'work.label':'Projets','work.title':'Projets phares',
+  'work.desc':'Quelques projets qui montrent comment j’aborde de vrais problèmes produit : gestion d’état, design d’interaction et la mécanique derrière l’interface.',
+  'st.react':'App React','st.js':'JavaScript natif','st.wip':'En cours',
+  'p1.d':'Une boutique e-commerce d’alimentation et de boissons avec un parcours d’achat complet, en single-page app.',
+  'p1.1':'Catalogue avec recherche instantanée, filtres par catégorie et fiches produit',
+  'p1.2':'Panier avec gestion des quantités, codes promo et seuil de livraison gratuite',
+  'p1.3':'Parcours de commande et de connexion, avec l’état panier, auth et UI dans des slices Redux Toolkit',
+  'p2.t':'Site d’apprentissage ESL',
+  'p2.d':'Un site d’anglais pour francophones, centré sur les erreurs qu’ils font le plus souvent.',
+  'p2.1':'Moteur d’infobulles de glossaire bilingue EN↔FR qui annote les termes au chargement du contenu, avec TreeWalker et MutationObserver',
+  'p2.2':'Fiches imprimables sur les faux amis, present perfect vs passé composé et les phrasal verbs',
+  'p3.d':'Une app musicale pensée mobile : décrivez une ambiance en quelques mots et obtenez la playlist qui va avec.',
+  'p3.1':'Une couche LLM Claude transforme les humeurs en langage naturel en requêtes Spotify structurées',
+  'p3.2':'Un back-end Node/Express léger gère l’OAuth Spotify et garde les clés d’API hors du client',
+  'work.more':'// Autres projets — en ligne sur GitHub Pages',
+  'ct.label':'Contact','ct.title':'Travaillons<br/>ensemble.','ct.h3':'Envoyez-moi un message',
+  'ct.p':'Vous recrutez pour un poste front-end ou vous avez un projet ? Je suis ouvert aux postes en remote et aux missions freelance, et je réponds généralement sous 24 h.',
+  'ct.loc':'Localisation','ct.locv':'Laval, France · Remote',
+  'f.name':'Nom complet *','f.name.ph':'Jean Dupont','f.name.err':'Veuillez entrer votre nom.',
+  'f.email.ph':'jean@entreprise.fr','f.email.err':'Email invalide.',
+  'f.subj':'Sujet *','f.subj.ph':'Poste, projet, question…','f.subj.err':'Veuillez entrer un sujet.',
+  'f.msg.ph':'Parlez-moi du poste ou du projet…','f.msg.err':'Veuillez entrer un message.',
+  'f.send':'Envoyer →',
+  'ft':'Ingénieur Front-End · France · Remote'
+};
+const MSG = {
+  en:{sending:'Sending…',ok:'✓ Message sent! I’ll get back to you soon.',err:'✕ Couldn’t send. Please try again or email me directly.'},
+  fr:{sending:'Envoi…',ok:'✓ Message envoyé ! Je vous répondrai très bientôt.',err:'✕ Erreur d’envoi. Réessayez ou écrivez-moi directement par email.'}
+};
+let lang = 'en';
+
+/* Keep the English originals so we can switch back */
+document.querySelectorAll('[data-i18n]').forEach(el=>{el.dataset.en=el.innerHTML;});
+document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.dataset.enPh=el.placeholder;});
+
+function setLang(l){
+  lang = l==='fr' ? 'fr' : 'en';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.dataset.i18n;
+    el.innerHTML = (lang==='fr' && FR[k]) ? FR[k] : el.dataset.en;
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+    const k=el.dataset.i18nPh;
+    el.placeholder = (lang==='fr' && FR[k]) ? FR[k] : el.dataset.enPh;
+  });
+  const b=document.getElementById('langBtn');
+  b.textContent = lang==='fr' ? 'EN' : 'FR';
+  b.setAttribute('aria-label', lang==='fr' ? 'View in English' : 'Voir en français');
+  try{ localStorage.setItem('wr-lang',lang); }catch(e){}
+}
+document.getElementById('langBtn').addEventListener('click',()=>setLang(lang==='fr'?'en':'fr'));
+(function initLang(){
+  let saved=null;
+  try{ saved=localStorage.getItem('wr-lang'); }catch(e){}
+  const q=new URLSearchParams(location.search).get('lang');
+  const pick = q || saved || ((navigator.language||'').toLowerCase().startsWith('fr') ? 'fr' : 'en');
+  if(pick==='fr') setLang('fr');
+})();
 
 /* Image error fallbacks */
 document.getElementById('avatar-img').onerror=function(){this.closest('.mobile-avatar').style.display='none';};
@@ -775,23 +950,13 @@ function cmob(){
 document.addEventListener('click',e=>{
   if(mob.classList.contains('open')&&!mob.contains(e.target)&&!hbg.contains(e.target)) cmob();
 });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && mob.classList.contains('open')) cmob(); });
 
 /* Scroll reveal */
 const ro=new IntersectionObserver(es=>{
   es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});
 },{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
-
-/* Skill bars */
-const so=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.querySelectorAll('.sk-fl').forEach(b=>b.style.width=b.dataset.w+'%');
-      so.unobserve(e.target);
-    }
-  });
-},{threshold:.2});
-document.querySelectorAll('.skills-col').forEach(el=>so.observe(el));
 
 /* Clear field errors on input */
 const fm={cn:'fgn',ce:'fge',cs:'fgs',cm2:'fgm'};
@@ -809,12 +974,13 @@ function vld(){
     {fg:'fgs',el:'cs', ok:v=>v.trim().length>2},
     {fg:'fgm',el:'cm2',ok:v=>v.trim().length>5},
   ];
-  let pass=true;
+  let pass=true, first=null;
   rules.forEach(r=>{
     const ok=r.ok(document.getElementById(r.el).value);
     document.getElementById(r.fg).classList.toggle('err',!ok);
-    if(!ok) pass=false;
+    if(!ok){ pass=false; if(!first) first=r.el; }
   });
+  if(first) document.getElementById(first).focus();
   return pass;
 }
 
@@ -829,7 +995,8 @@ function showToast(msg,type){
 async function sendMsg(){
   if(!vld()) return;
   const btn=document.getElementById('sbtn'),lbl=document.getElementById('sbl');
-  btn.disabled=true;lbl.textContent='Envoi…';
+  const label=lbl.innerHTML;
+  btn.disabled=true;lbl.textContent=MSG[lang].sending;
   try{
     const res=await fetch('https://api.web3forms.com/submit',{
       method:'POST',
@@ -844,16 +1011,16 @@ async function sendMsg(){
     });
     const data=await res.json();
     if(data.success){
-      showToast('✓ Message envoyé ! Je vous répondrai très bientôt.','ok');
+      showToast(MSG[lang].ok,'ok');
       ['cn','ce','cs','cm2'].forEach(id=>document.getElementById(id).value='');
     }else{
-      throw new Error(data.message||'Erreur inconnue');
+      throw new Error(data.message||'Unknown error');
     }
   }catch(err){
     console.error(err);
-    showToast('✕ Erreur d\'envoi. Réessayez ou écrivez directement par email.','err');
+    showToast(MSG[lang].err,'err');
   }finally{
-    btn.disabled=false;lbl.textContent='Envoyer →';
+    btn.disabled=false;lbl.innerHTML=label;
   }
 }
 </script>
