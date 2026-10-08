@@ -539,7 +539,7 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
       </h1>
       <p class="hero-desc" data-i18n="hero.desc">I build fast, accessible web apps with React, TypeScript and Next.js, from polished interfaces to the APIs behind them. 8 years in software engineering, trilingual (EN/ES/FR), comfortable across US and European hours.</p>
       <div class="btn-row">
-        <a href="Wilmer_Rodriguez_Resume.pdf?v=20261008" target="_blank" rel="noopener" class="btn btn-p" data-i18n="cta.cv">↓ Download resume</a>
+        <a href="Wilmer_Rodriguez_Resume.pdf?v=20261008b" target="_blank" rel="noopener" class="btn btn-p" data-i18n="cta.cv">↓ Download resume</a>
         <a href="#portfolio" class="btn btn-g" data-i18n="cta.work">See my work →</a>
       </div>
     </div>
@@ -584,7 +584,7 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
         <div class="sg"><div class="n">10+</div><div class="l" data-i18n="stat.projects">Projects shipped</div></div>
         <div class="sg"><div class="n">EU+US</div><div class="l" data-i18n="stat.tz">Time zones covered</div></div>
       </div>
-      <a href="Wilmer_Rodriguez_Resume.pdf?v=20261008" target="_blank" rel="noopener" class="btn btn-g about-cv" data-i18n="cta.cv">↓ Download resume</a>
+      <a href="Wilmer_Rodriguez_Resume.pdf?v=20261008b" target="_blank" rel="noopener" class="btn btn-g about-cv" data-i18n="cta.cv">↓ Download resume</a>
     </div>
 
     <div class="rev d2">
@@ -687,7 +687,7 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
 
     <div class="fp">
       <article class="fpc rev d1">
-        <div class="fp-top"><span class="fp-n">// 01</span><span class="fp-st" data-i18n="st.react">React app</span></div>
+        <div class="fp-top"><span class="fp-n">// 01</span><span class="fp-st live" data-i18n="st.live">Live</span></div>
         <h3 class="fp-t">Groovy Grub</h3>
         <p class="fp-d" data-i18n="p1.d">A food &amp; beverage e-commerce store with a full shopping flow, built as a single-page app.</p>
         <ul class="fp-pts">
@@ -696,17 +696,19 @@ footer{background:var(--bg1);border-top:1px solid var(--line);padding:1.4rem cla
           <li data-i18n="p1.3">Checkout and sign-in flows, with cart, auth and UI state in Redux Toolkit slices</li>
         </ul>
         <div class="fp-tags"><span>React 18</span><span>Redux Toolkit</span><span>React Router</span><span>Vite</span></div>
+        <div class="fp-links"><a href="https://wilmerrodriguez.github.io/groovy-grub/" target="_blank" rel="noopener" data-i18n="lnk.live">Live demo ↗</a><a href="https://github.com/wilmerRodriguez/groovy-grub" target="_blank" rel="noopener" data-i18n="lnk.code">Code ↗</a></div>
       </article>
 
       <article class="fpc rev d2">
-        <div class="fp-top"><span class="fp-n">// 02</span><span class="fp-st" data-i18n="st.js">Vanilla JS</span></div>
-        <h3 class="fp-t" data-i18n="p2.t">ESL Learning Site</h3>
+        <div class="fp-top"><span class="fp-n">// 02</span><span class="fp-st live" data-i18n="st.live">Live</span></div>
+        <h3 class="fp-t" data-i18n="p2.t">Fluent: ESL Learning Site</h3>
         <p class="fp-d" data-i18n="p2.d">An English-learning site for French speakers, focused on the mistakes they make most.</p>
         <ul class="fp-pts">
           <li data-i18n="p2.1">Bilingual EN↔FR glossary tooltip engine that annotates terms as content loads, using TreeWalker and MutationObserver</li>
           <li data-i18n="p2.2">Printable worksheets on false friends, present perfect vs. passé composé and phrasal verbs</li>
         </ul>
         <div class="fp-tags"><span>JavaScript</span><span>DOM APIs</span><span>HTML5</span><span>CSS3</span></div>
+        <div class="fp-links"><a href="https://wilmerrodriguez.github.io/fluent-english/" target="_blank" rel="noopener" data-i18n="lnk.live">Live demo ↗</a><a href="https://github.com/wilmerRodriguez/fluent-english" target="_blank" rel="noopener" data-i18n="lnk.code">Code ↗</a></div>
       </article>
 
       <article class="fpc rev d3">
@@ -856,12 +858,12 @@ const FR = {
   'edu.ztm':'Redux, Redux Saga, GraphQL, React Router, Firebase, API Stripe, PWA, tests Jest',
   'work.label':'Projets','work.title':'Projets phares',
   'work.desc':'Quelques projets qui montrent comment j’aborde de vrais problèmes produit : gestion d’état, design d’interaction et la mécanique derrière l’interface.',
-  'st.react':'App React','st.js':'JavaScript natif','st.wip':'En cours',
+  'st.live':'En ligne','st.wip':'En cours','lnk.live':'Voir le site ↗','lnk.code':'Code ↗',
   'p1.d':'Une boutique e-commerce d’alimentation et de boissons avec un parcours d’achat complet, en single-page app.',
   'p1.1':'Catalogue avec recherche instantanée, filtres par catégorie et fiches produit',
   'p1.2':'Panier avec gestion des quantités, codes promo et seuil de livraison gratuite',
   'p1.3':'Parcours de commande et de connexion, avec l’état panier, auth et UI dans des slices Redux Toolkit',
-  'p2.t':'Site d’apprentissage ESL',
+  'p2.t':'Fluent : site d’apprentissage ESL',
   'p2.d':'Un site d’anglais pour francophones, centré sur les erreurs qu’ils font le plus souvent.',
   'p2.1':'Moteur d’infobulles de glossaire bilingue EN↔FR qui annote les termes au chargement du contenu, avec TreeWalker et MutationObserver',
   'p2.2':'Fiches imprimables sur les faux amis, present perfect vs passé composé et les phrasal verbs',
